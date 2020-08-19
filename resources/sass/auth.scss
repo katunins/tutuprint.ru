@@ -1,0 +1,110 @@
+.auth-form {
+    width: 250px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 300;
+    outline: none;
+    text-align: center;
+}
+
+form a {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    transform: translateY(-30px);
+    text-align: center;
+}
+
+
+
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form > .button {
+    background-color: FFCC00;
+    border: none;
+    margin-top: 30px;
+}
+
+.agree {
+    font-size: 12px;
+    text-align: start;
+    margin-top: 30px;
+}
+
+.agree > a {
+    opacity: 1;
+    font-size: inherit;
+}
+.agree-text {
+    width: 80%;
+    text-align: left;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.agree-text > p {
+    margin: 10px 0 ;
+}
+
+.agree-text > li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    label {
+        font-size: 14px;
+    }
+
+    form input {
+        padding: 5px;
+    }
+
+    .button {
+        padding: 8px;
+        width: 200px;
+        font-size: 14px;
+    }
+    .agree-text {
+        width: 90%;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .agree-text > p {
+        margin: 8px 0 ;
+    }
+    .agree-text > li {
+        font-size: 10px;
+    }
+}
