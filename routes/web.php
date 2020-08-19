@@ -18,7 +18,10 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-// ---
+
+
+
+// авторизация
 
 Route::get('/auth', function () {
     return view('auth');
@@ -32,6 +35,10 @@ Route::get('/agree', function () {
     return view('agree');
 })->name('agree');
 
+Route::post('/signup', 'AuthController@SignUp')->name('SignUp');
+
+
+
 // ---
 
 Route::get('/picture-select', function () {
@@ -44,4 +51,4 @@ Route::get('/about', function () {
 })->name('about');
 
 // ---
-Route::post('/signin', 'AuthController@SignIn')->name('SignIn');
+

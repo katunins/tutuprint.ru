@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="auth-form">
-    <form action="{{Route('SignIn')}}" role="form" method="post">
+    <form action="" role="form" method="post">
         @csrf
         <div class="form-group">
 

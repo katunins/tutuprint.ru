@@ -32,8 +32,8 @@
                 </svg>
             </div>
         </div>
+        @include('modal')
         @yield('content')
-
 
         <div class="back">
             @yield('back')

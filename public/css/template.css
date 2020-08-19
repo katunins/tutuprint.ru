@@ -17,6 +17,7 @@ body {
 
 .container {
   display: flex;
+  background-color: #f0f0ee;
   width: 800px;
   padding: 180px 0;
   flex-direction: column;
@@ -54,7 +55,21 @@ body {
   margin-top: 5px;
 }
 
+.modal {
+  margin: 0px auto 30px;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 20px 20px;
+  background-color: #FFCC00;
+  width: 360px;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
+  body {
+    background-color: #f0f0ee;
+  }
+
   .container {
     padding: 0px;
     margin: 30px 0;

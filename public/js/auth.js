@@ -93,17 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.form-group').forEach(function (elem) {
-    elem.children[0].addEventListener('input', function () {
-      if (this.value) {
-        this.parentNode.querySelector('label').setAttribute('style', 'transform: translateY(-60px); opacity: 0.3');
-      } else {
-        this.parentNode.querySelector('label').setAttribute('style', 'transform: translateY(-30px); opacity: 1');
-      }
-    });
-  });
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/pavelkatunin/Documents/tutuprint.ru/resources/js/auth.js'");
 
 /***/ }),
 

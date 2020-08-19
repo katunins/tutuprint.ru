@@ -4,35 +4,37 @@
 @section('title', 'Регистрация пользователя')
 
 @section('content')
+
 <div class="auth-form">
-    <form action="{{Route('SignIn')}}" role="form" method="post">
+    <form action="{{Route('SignUp')}}" role="form" method="post">
         @csrf
-        <div class="form-group">
-            <input type="text" id="name" name="name">
-            <label for="name">Имя</label>
-        </div>
-        <div class="form-group">
 
-            <input type="email" id="login" name="login">
-            <label for="login">Email</label>
-        </div>
         <div class="form-group">
+            <input class="@error('name') error-input @enderror" type="text" id="name" name="name"
+                value="{{Request::old('name') ?: ''}}"
+                placeholder="{{$errors->has('name') ?  $errors->first('name'): (Request::old('name') ?: 'Ваше имя')}}">
+        </div>
 
-            <input type="password" id="password" name="password">
-            <label for="password">Пароль</label>
+        <div class="form-group">
+            <input class="@error('email') error-input @enderror" type="email" id="email" name="email"
+                value="{{Request::old('email') ?: ''}}"
+                placeholder="{{$errors->has('email') ?  $errors->first('email'): (Request::old('email') ?: 'Email')}}">
         </div>
-        <div class="agree">
-            Нажимая кнопку <b>зарегистрироваться</b> я даю <a href="{{Route('agree')}}">согласие</a> на обработку персональных
-            данных
+
+        <div class="form-group">
+            <input class="@error('password') error-input @enderror" type="password" id="password" name="password"
+                placeholder="{{ $errors->has('password') ?  $errors->first('password'): 'Введите пароль' }}">
         </div>
-        <button class="button" type="submit">Зарегистрироваться</button>
-    </form>
+
+<div class="agree">
+    Нажимая кнопку <b>зарегистрироваться</b> я даю <a href="{{Route('agree')}}">согласие</a> на обработку
+    персональных
+    данных
+</div>
+<button class="button" type="submit">Зарегистрироваться</button>
+</form>
 </div>
 
 @endsection
 
-@section('back')
-<a href={{Route('auth')}}><</a> 
-@endsection
-
-<script src="js/auth.js"></script>
+@section('back') <a href={{Route('auth')}}> < </a> @endsection
