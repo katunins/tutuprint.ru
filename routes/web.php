@@ -35,7 +35,19 @@ Route::get('/agree', function () {
     return view('agree');
 })->name('agree');
 
+Route::get('/newpassword', function () {
+    return view('password-reset');
+})->name('newpassword');
+
+Route::get ('/signout', 'AuthController@SignOut')->name('SignOut');
+
 Route::post('/signup', 'AuthController@SignUp')->name('SignUp');
+Route::post('/signin', 'AuthController@SignIn')->name('SignIn');
+Route::post('/passreset', 'AuthController@PassReset')->name('PassReset');
+
+Route::get('/test', function (){
+    return redirect()->route('index')->with('modal-info', 'тест сработал');
+});
 
 
 

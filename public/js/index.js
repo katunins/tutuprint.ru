@@ -19366,10 +19366,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 /***/ }),
 
-/***/ "./resources/sass/auth.scss":
-/*!**********************************!*\
-  !*** ./resources/sass/auth.scss ***!
-  \**********************************/
+/***/ "./resources/sass/index.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/index.scss ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -19377,10 +19377,21 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 /***/ }),
 
-/***/ "./resources/sass/index.scss":
-/*!***********************************!*\
-  !*** ./resources/sass/index.scss ***!
-  \***********************************/
+/***/ "./resources/sass/personal.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/personal.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/signin.scss":
+/*!************************************!*\
+  !*** ./resources/sass/signin.scss ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -19400,16 +19411,17 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************!*\
-  !*** multi ./resources/js/index.js ./resources/sass/template.scss ./resources/sass/index.scss ./resources/sass/auth.scss ***!
-  \***************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/index.js ./resources/sass/template.scss ./resources/sass/index.scss ./resources/sass/personal.scss ./resources/sass/signin.scss ***!
+  \************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/pavelkatunin/Documents/tutuprint.ru/resources/js/index.js */"./resources/js/index.js");
 __webpack_require__(/*! /Users/pavelkatunin/Documents/tutuprint.ru/resources/sass/template.scss */"./resources/sass/template.scss");
 __webpack_require__(/*! /Users/pavelkatunin/Documents/tutuprint.ru/resources/sass/index.scss */"./resources/sass/index.scss");
-module.exports = __webpack_require__(/*! /Users/pavelkatunin/Documents/tutuprint.ru/resources/sass/auth.scss */"./resources/sass/auth.scss");
+__webpack_require__(/*! /Users/pavelkatunin/Documents/tutuprint.ru/resources/sass/personal.scss */"./resources/sass/personal.scss");
+module.exports = __webpack_require__(/*! /Users/pavelkatunin/Documents/tutuprint.ru/resources/sass/signin.scss */"./resources/sass/signin.scss");
 
 
 /***/ })

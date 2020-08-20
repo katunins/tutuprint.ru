@@ -1,7 +1,8 @@
 {
-    "/js/auth.js": "/js/auth.js",
     "/js/index.js": "/js/index.js",
     "/css/template.css": "/css/template.css",
     "/css/index.css": "/css/index.css",
-    "/css/auth.css": "/css/auth.css"
+    "/css/personal.css": "/css/personal.css",
+    "/css/signin.css": "/css/signin.css",
+    "/js/mobile-mask.js": "/js/mobile-mask.js"
 }

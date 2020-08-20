@@ -80,6 +80,26 @@ form > .button {
     border: 1px solid #FFCC00;
 }
 
+.restore-pass {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.checkbox > input{
+    width: 15px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.checkbox > label {
+    font-size: 14px;
+}
+
+form p {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 768px) {
     label {
         font-size: 14px;

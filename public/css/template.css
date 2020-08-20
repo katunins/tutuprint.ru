@@ -63,6 +63,47 @@ body {
   background-color: #FFCC00;
   width: 360px;
   text-align: center;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes open {
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@keyframes open {
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.modal > svg {
+  width: 20px;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,6 +132,12 @@ body {
   .back > a {
     font-size: 14px;
     padding: 4px 12px;
+  }
+
+  .modal {
+    width: 250px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
   }
 }
 

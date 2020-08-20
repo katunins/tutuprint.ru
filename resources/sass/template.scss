@@ -15,7 +15,7 @@ b {
 }
 
 body {
-    
+
     display: flex;
     align-items: center;
 }
@@ -39,7 +39,8 @@ body {
     width: 100%;
     text-align: center;
 }
-.back > a{
+
+.back>a {
     opacity: 1;
     text-decoration: none;
     border: 1px solid grey;
@@ -67,17 +68,44 @@ body {
     background-color: #FFCC00;
     width: 360px;
     text-align: center;
+
+    animation-name: open;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes open {
+    0% {}
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.modal>svg {
+    width: 20px;
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 768px) {
     body {
         background-color: rgb(240, 240, 238);
     }
+
     .container {
         padding: 0px;
         margin: 30px 0;
     }
-    
+
     .logo {
         width: 150px;
     }
@@ -91,8 +119,14 @@ body {
         transform: translate(130px, -60px);
     }
 
-    .back > a {
+    .back>a {
         font-size: 14px;
         padding: 4px 12px;
+    }
+
+    .modal {
+        width: 250px;
+        padding: 10px 20px;
+        margin-bottom: 15px;
     }
 }
